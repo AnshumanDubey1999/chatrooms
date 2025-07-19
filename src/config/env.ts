@@ -1,4 +1,4 @@
-const getValue = (key: string): string => {
+export const getValue = (key: string): string => {
   const value = process.env[key];
   if (!value) {
     console.error(`Value for environment variable ${key} is not defined!`);

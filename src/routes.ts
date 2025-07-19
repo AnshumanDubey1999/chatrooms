@@ -1,11 +1,11 @@
 import { Express, Request, Response } from 'express';
-import { createToken, validateToken } from './services/authService.js';
-import { createRoom } from './services/roomService.js';
-import { createUser } from './services/userService.js';
+import { createToken, validateToken } from './services/authService';
+import { createRoom } from './services/roomService';
+import { createUser } from './services/userService';
 import {
   createRoomValidation,
   registerValidation,
-} from './validations/routeValidations.js';
+} from './validations/routeValidations';
 
 export const setupRoutes = (app: Express): void => {
   app.post(

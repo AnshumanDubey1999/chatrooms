@@ -3,7 +3,7 @@ import {
   MAX_ROOM_ID_LENGTH,
   ROOM_EXPIRES_IN_SECONDS,
   ROOM_TYPES,
-} from '../config/constants.js';
+} from '../config/constants';
 
 export type RoomType = {
   _id: string;

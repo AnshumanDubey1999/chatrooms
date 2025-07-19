@@ -1,13 +1,13 @@
 import { ObjectId } from 'mongoose';
-import { Message, MessageType } from '../models/messages.js';
-import { getRoom } from './roomService.js';
-import { getUser } from './userService.js';
+import { Message, MessageType } from '../models/messages';
+import { getRoom } from './roomService';
+import { getUser } from './userService';
 import {
   MAX_MESSAGES_IN_BUFFER,
   MESSAGE_LIMIT_PER_ROOM,
-} from '../config/constants.js';
-import { AppError } from '../exceptions/AppError.js';
-import { Errors } from '../exceptions/Errors.js';
+} from '../config/constants';
+import { AppError } from '../exceptions/AppError';
+import { Errors } from '../exceptions/Errors';
 
 const roomMessagesMap: Map<string, MessageType[]> = new Map();
 const messagesToSave: MessageType[] = [];

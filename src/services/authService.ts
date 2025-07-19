@@ -1,10 +1,10 @@
 import jwt from 'jsonwebtoken';
-import { AppError } from '../exceptions/AppError.js';
-import { Errors } from '../exceptions/Errors.js';
-import { getUser } from './userService.js';
-import { JWT_SECRET } from '../config/env.js';
+import { AppError } from '../exceptions/AppError';
+import { Errors } from '../exceptions/Errors';
+import { getUser } from './userService';
+import { JWT_SECRET } from '../config/env';
 import { ObjectId } from 'mongoose';
-import { TOKEN_EXPIRES_IN } from '../config/constants.js';
+import { TOKEN_EXPIRES_IN } from '../config/constants';
 
 export async function validateToken(token?: string) {
   try {
