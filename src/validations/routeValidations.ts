@@ -2,7 +2,7 @@ import {
   MAX_ROOM_ID_LENGTH,
   MAX_USERNAME_LENGTH,
   ROOM_TYPES,
-} from '../config/constants.js';
+} from '../config/constants';
 import { validate, Joi } from 'express-validation';
 
 const validRoomTypes = Object.values(ROOM_TYPES);

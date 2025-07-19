@@ -2,7 +2,7 @@ import mongoose, { Schema } from 'mongoose';
 import {
   MAX_USERNAME_LENGTH,
   USER_EXPIRES_IN_SECONDS,
-} from '../config/constants.js';
+} from '../config/constants';
 
 export type UserType = {
   _id: Schema.Types.ObjectId;

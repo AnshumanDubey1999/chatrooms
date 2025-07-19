@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
-import { DB_NAME, MONGO_DB_URI } from '../config/env.js';
-import { initializeUsers } from '../services/userService.js';
-import { initializeRooms } from '../services/roomService.js';
+import { DB_NAME, MONGO_DB_URI } from '../config/env';
+import { initializeUsers } from '../services/userService';
+import { initializeRooms } from '../services/roomService';
 mongoose.Promise = Promise;
 
 export const db = function () {

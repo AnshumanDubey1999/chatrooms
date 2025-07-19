@@ -1,5 +1,5 @@
 import mongoose, { Schema } from 'mongoose';
-import { MESSAGES_EXPIRES_IN_SECONDS } from '../config/constants.js';
+import { MESSAGES_EXPIRES_IN_SECONDS } from '../config/constants';
 
 export type MessageType = {
   _id: Schema.Types.ObjectId;
