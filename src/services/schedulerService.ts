@@ -1,6 +1,6 @@
 import nodeCron from 'node-cron';
-import { closeLongLivedRooms, updateDataToDatabase } from './roomService.js';
-import { updateNewMessages, updateRemovedMessages } from './messageService.js';
+import { closeLongLivedRooms, updateDataToDatabase } from './roomService';
+import { updateNewMessages, updateRemovedMessages } from './messageService';
 
 const EVERY_MINUTE = '* * * * *';
 

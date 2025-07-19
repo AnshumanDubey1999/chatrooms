@@ -1,15 +1,15 @@
-import { Room, RoomType } from '../models/room.js';
-import { AppError } from '../exceptions/AppError.js';
-import { Errors } from '../exceptions/Errors.js';
+import { Room, RoomType } from '../models/room';
+import { AppError } from '../exceptions/AppError';
+import { Errors } from '../exceptions/Errors';
 import { ObjectId } from 'mongoose';
 import {
   ROOM_EXPIRES_IN_SECONDS,
   ROOM_LIMIT,
   ROOM_TYPES,
   USER_LIMIT_PER_ROOM,
-} from '../config/constants.js';
-import { removeUser, removeUsers } from './userService.js';
-import { removeRoomMessages } from './messageService.js';
+} from '../config/constants';
+import { removeUser, removeUsers } from './userService';
+import { removeRoomMessages } from './messageService';
 
 const rooms: Map<string, RoomType> = new Map();
 const roomsToUpdate: Set<string> = new Set();

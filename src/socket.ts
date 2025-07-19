@@ -1,7 +1,7 @@
 import { Server } from 'socket.io';
-import { getRoom, joinRoom, leaveRoom } from './services/roomService.js';
-import { validateToken } from './services/authService.js';
-import { addMessage } from './services/messageService.js';
+import { getRoom, joinRoom, leaveRoom } from './services/roomService';
+import { validateToken } from './services/authService';
+import { addMessage } from './services/messageService';
 
 export const setupSocket = (io: Server): void => {
   io.use((socket, next) => {

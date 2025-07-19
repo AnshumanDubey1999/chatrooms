@@ -1,8 +1,8 @@
 import { ObjectId } from 'mongoose';
-import { AppError } from '../exceptions/AppError.js';
-import { Errors } from '../exceptions/Errors.js';
-import { User, UserType } from '../models/user.js';
-import { USER_LIMIT } from '../config/constants.js';
+import { AppError } from '../exceptions/AppError';
+import { Errors } from '../exceptions/Errors';
+import { User, UserType } from '../models/user';
+import { USER_LIMIT } from '../config/constants';
 
 const users: Map<string, UserType> = new Map();
 

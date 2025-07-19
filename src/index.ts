@@ -1,4 +1,4 @@
-import { db } from './models/index.js';
+import { db } from './models/index';
 db();
 
 import express, { NextFunction, Request, Response } from 'express';
@@ -7,12 +7,12 @@ import { Server } from 'socket.io';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 
-import { setupRoutes } from './routes.js';
-import { setupSocket } from './socket.js';
-import { AppError } from './exceptions/AppError.js';
-import { PORT } from './config/env.js';
+import { setupRoutes } from './routes';
+import { setupSocket } from './socket';
+import { AppError } from './exceptions/AppError';
+import { PORT } from './config/env';
 import { ValidationError } from 'express-validation';
-import './services/schedulerService.js';
+import './services/schedulerService';
 
 const app = express();
 const server = http.createServer(app);

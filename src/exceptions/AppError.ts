@@ -1,5 +1,5 @@
 import { Response } from 'express';
-import { ErrorData, Errors } from './Errors.js';
+import { ErrorData, Errors } from './Errors';
 
 export class AppError extends Error {
   public readonly code: string;
