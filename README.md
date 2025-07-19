@@ -1,5 +1,4 @@
-<img alt="gitleaks badge" src="https://img.shields.io/badge/protected%20by-gitleaks-blue">
-# Chatrooms
+# Chatrooms <img alt="gitleaks badge" src="https://img.shields.io/badge/protected%20by-gitleaks-blue">
 
 Welcome to the Chatrooms project! This repository contains the source code for a simple chat application (for now).
 
