@@ -5,10 +5,13 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
+    "clear": "rm -rf dist",
     "start": "node dist/index.js",
-    "build": "tsc",
-    "dev": "tsc && node dist/index.js",
-    "format": "prettier --write ."
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "jest",
+    "format": "prettier --write .",
+    "check-format": "prettier --check ."
   },
   "author": "Anshuman Dubey",
   "license": "ISC",
@@ -25,11 +28,15 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.17",
+    "@types/jest": "^30.0.0",
     "@types/jsonwebtoken": "^9.0.9",
     "@types/node": "^20.0.0",
     "@types/socket.io": "^3.0.1",
+    "jest": "^30.0.4",
     "prettier": "^3.5.3",
+    "ts-jest": "^29.4.0",
     "ts-node": "^10.9.2",
+    "tsup": "^8.5.0",
     "typescript": "^5.0.0"
   }
 }
