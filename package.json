@@ -11,7 +11,8 @@
     "dev": "tsup --watch",
     "test": "jest",
     "format": "prettier --write .",
-    "check-format": "prettier --check ."
+    "check-format": "prettier --check .",
+    "setup-githooks": "chmod +x githooks/pre-push && cp githooks/pre-push ./.git/hooks"
   },
   "author": "Anshuman Dubey",
   "license": "ISC",
