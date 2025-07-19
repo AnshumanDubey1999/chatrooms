@@ -39,19 +39,21 @@ app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   if (err instanceof AppError) {
     console.error(`AppError: ${err.message}`);
     err.sendResponse(res);
-  } 
-  else if (err instanceof ValidationError) {
+  } else if (err instanceof ValidationError) {
     return res.status(err.statusCode).json(err);
-  }
-  else {
+  } else {
     console.error('Unhandled error:', err.message || err);
-    res.status(err.status || 500).json({ error: err.message || 'Internal Server Error' });
+    res
+      .status(err.status || 500)
+      .json({ error: err.message || 'Internal Server Error' });
   }
 });
 
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   console.error('Unhandled error:', err.message);
-  res.status(err.status || 500).json({ error: err.message || 'Internal Server Error' });
+  res
+    .status(err.status || 500)
+    .json({ error: err.message || 'Internal Server Error' });
 });
 
 process.on('uncaughtException', (err) => {

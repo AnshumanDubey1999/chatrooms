@@ -1,11 +1,11 @@
-const getValue = (key: string) : string => {
-    var value = process.env[key];
-    if(!value) {
-        console.error(`Value for environment variable ${key} is not defined!`)
-        process.exit(0);
-    }
-    return value;
-}
+const getValue = (key: string): string => {
+  const value = process.env[key];
+  if (!value) {
+    console.error(`Value for environment variable ${key} is not defined!`);
+    process.exit(0);
+  }
+  return value;
+};
 
 export const PORT = getValue('PORT');
 export const MONGO_DB_URI = getValue('MONGO_DB_URI');

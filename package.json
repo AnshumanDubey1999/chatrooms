@@ -8,7 +8,7 @@
     "start": "node dist/index.js",
     "build": "tsc",
     "dev": "tsc && node dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write ."
   },
   "author": "Anshuman Dubey",
   "license": "ISC",
@@ -28,6 +28,7 @@
     "@types/jsonwebtoken": "^9.0.9",
     "@types/node": "^20.0.0",
     "@types/socket.io": "^3.0.1",
+    "prettier": "^3.5.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.0.0"
   }
