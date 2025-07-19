@@ -9,6 +9,11 @@ describe('AppError', () => {
     expect(error.statusCode).toBe(404);
   });
 
+  test('should create an instance of AppError with default status code 400 when status code is not present', () => {
+    const error = new AppError(Errors.INVALID_ROOM_TYPE);
+    expect(error.statusCode).toBe(400);
+  });
+
   test('should handle sendResponse', () => {
     const error = new AppError(Errors.ROOM_NOT_FOUND);
     const mockResponse = {
