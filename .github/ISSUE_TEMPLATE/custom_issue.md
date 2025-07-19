@@ -1,10 +1,9 @@
 ---
 name: Custom Issue
 about: Create a custom issue
-title: "[Custom] <Short description>"
+title: '[Custom] <Short description>'
 labels: ''
 assignees: ''
-
 ---
 
 **Describe your issue**
