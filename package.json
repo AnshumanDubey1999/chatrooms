@@ -10,6 +10,7 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
     "setup-githooks": "chmod +x githooks/pre-push && cp githooks/pre-push ./.git/hooks"
